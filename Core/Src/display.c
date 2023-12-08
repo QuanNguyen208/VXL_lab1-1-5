@@ -105,3 +105,100 @@ void display7SEG(int num){
 	}
 }
 
+void display7SEG0(int num){
+	switch(num){
+	case 0:
+		HAL_GPIO_WritePin ( A0_GPIO_Port , A0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( B0_GPIO_Port , B0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( C0_GPIO_Port , C0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( D0_GPIO_Port , D0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( E0_GPIO_Port , E0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( F0_GPIO_Port , F0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( G0_GPIO_Port , G0_Pin , GPIO_PIN_SET ) ;
+		break;
+	case 1:
+		HAL_GPIO_WritePin ( A0_GPIO_Port , A0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( B0_GPIO_Port , B0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( C0_GPIO_Port , C0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( D0_GPIO_Port , D0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( E0_GPIO_Port , E0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( F0_GPIO_Port , F0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( G0_GPIO_Port , G0_Pin , GPIO_PIN_SET ) ;
+		break;
+	case 2:
+		HAL_GPIO_WritePin ( A0_GPIO_Port , A0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( B0_GPIO_Port , B0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( C0_GPIO_Port , C0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( D0_GPIO_Port , D0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( E0_GPIO_Port , E0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( F0_GPIO_Port , F0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( G0_GPIO_Port , G0_Pin , GPIO_PIN_RESET ) ;
+		break;
+	case 3:
+		HAL_GPIO_WritePin ( A0_GPIO_Port , A0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( B0_GPIO_Port , B0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( C0_GPIO_Port , C0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( D0_GPIO_Port , D0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( E0_GPIO_Port , E0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( F0_GPIO_Port , F0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( G0_GPIO_Port , G0_Pin , GPIO_PIN_RESET ) ;
+		break;
+	case 4:
+		HAL_GPIO_WritePin ( A0_GPIO_Port , A0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( B0_GPIO_Port , B0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( C0_GPIO_Port , C0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( D0_GPIO_Port , D0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( E0_GPIO_Port , E0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( F0_GPIO_Port , F0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( G0_GPIO_Port , G0_Pin , GPIO_PIN_RESET ) ;
+		break;
+	case 5:
+		HAL_GPIO_WritePin ( A0_GPIO_Port , A0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( B0_GPIO_Port , B0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( C0_GPIO_Port , C0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( D0_GPIO_Port , D0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( E0_GPIO_Port , E0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( F0_GPIO_Port , F0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( G0_GPIO_Port , G0_Pin , GPIO_PIN_RESET ) ;
+		break;
+	case 6:
+		HAL_GPIO_WritePin ( A0_GPIO_Port , A0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( B0_GPIO_Port , B0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( C0_GPIO_Port , C0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( D0_GPIO_Port , D0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( E0_GPIO_Port , E0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( F0_GPIO_Port , F0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( G0_GPIO_Port , G0_Pin , GPIO_PIN_RESET ) ;
+		break;
+	case 7:
+		HAL_GPIO_WritePin ( A0_GPIO_Port , A0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( B0_GPIO_Port , B0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( C0_GPIO_Port , C0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( D0_GPIO_Port , D0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( E0_GPIO_Port , E0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( F0_GPIO_Port , F0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( G0_GPIO_Port , G0_Pin , GPIO_PIN_SET ) ;
+		break;
+	case 8:
+		HAL_GPIO_WritePin ( A0_GPIO_Port , A0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( B0_GPIO_Port , B0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( C0_GPIO_Port , C0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( D0_GPIO_Port , D0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( E0_GPIO_Port , E0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( F0_GPIO_Port , F0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( G0_GPIO_Port , G0_Pin , GPIO_PIN_RESET ) ;
+		break;
+	case 9:
+		HAL_GPIO_WritePin ( A0_GPIO_Port , A0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( B0_GPIO_Port , B0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( C0_GPIO_Port , C0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( D0_GPIO_Port , D0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( E0_GPIO_Port , E0_Pin , GPIO_PIN_SET ) ;
+		HAL_GPIO_WritePin ( F0_GPIO_Port , F0_Pin , GPIO_PIN_RESET ) ;
+		HAL_GPIO_WritePin ( G0_GPIO_Port , G0_Pin , GPIO_PIN_RESET ) ;
+		break;
+	default:
+		break;
+	}
+}
+
